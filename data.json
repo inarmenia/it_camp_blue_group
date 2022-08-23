@@ -1,0 +1,30 @@
+
+{
+    "authors": [    
+      {
+        "name": "Martiros Saryan",
+        "img": "./img/mt.jfif",
+        "works":[ "./img/ar.webp","./img/ms.jpg","./img/ms2.jfif","./img/ms3.jfif","./img/ms4.jfif","./img/ms5.jfif"]
+      },
+      {
+        "name": "Arevshatyan Edik",
+        "img": "./img/ed.jpg",
+        "works":["./img/ed4.jpg","./img/ed5.jpg","./img/ed6.jpg","./img/ed2.jpg","./img/ed3.jpg","./img/ed1.jpg"]
+      },
+      {
+        "name": "Minas Avetisyan",
+        "img": "./img/min.jfif",
+        "works":[ "./img/mins2.jpeg","./img/mins.jfif","./img/mins3.jpg","./img/mins4.jfif","./img/mins6.jfif","./img/mins5.jpg"]
+      },
+      {
+        "name": "Hovhannes Aivazovsky",
+        "img": "./img/hov.jpg",
+        "works":["./img/ha2.jfif","./img/ha3.jfif","./img/1.jfif","./img/2.jpg","./img/3.jpg","./img/ha2.jfif"]
+      },
+      {
+        "name": "Hakob Kojoyan",
+        "img": "./img/hak.jpg",
+        "works":[ "./img/hk.jpg","./img/hk2.jpg","./img/hk3.jpg","./img/hk4.jpg","./img/hk5.jpg","./img/hk3.jpg"]
+      }
+    ]
+  }

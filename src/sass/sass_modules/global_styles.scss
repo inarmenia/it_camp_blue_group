@@ -62,6 +62,10 @@ header{
 		background-size: cover;
 	}
 }
+a{
+	text-decoration: none;
+	color: none;
+}
 
 .contr{
 	max-width: 1200px;
@@ -82,4 +86,29 @@ header{
 	to {
 	  opacity: 1;
 	}
+}
+
+
+.col-4{
+    position: relative;
+    width: 100%;
+	@include for-size(for-responsive){  
+        flex: 0 0 30%;
+        max-width: 30%
+    }
+}
+
+.col-8{
+    position: relative;
+    width: 100%;
+    @include for-size(for-responsive){  
+        flex: 0 0 70%;
+        max-width: 70%
+    }
+}
+
+.i{
+	color: white;
+	font-size: 20px;
+	
 }

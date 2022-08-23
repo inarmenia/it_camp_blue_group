@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Uchen&display=swap" rel="stylesheet">
-    <link rel=stylesheet href=assets/css/bootstrap.css>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -27,9 +27,15 @@
             <li><a class="scroll" href="#">Services</a></li>
             <li><a class="scroll" href="#">Feedback</a></li>
             <li><a class="scroll" href="#">Link</a></li>
+            <li>
+                <div class="nav-search">
+                    <span class="i"><i class="fa fa-search" aria-hidden="true"></i></span>
+                    <input id="filter-input" class="nav-inp" type="text"></input>
+                </div>
+            </li>
         </ul>
     </div>
-    <!-- header id="header" style="background-image: url('./img/mn2.jpg')" -->
+    
     <header id="header" style="background-image: url('./img/mn2.jpg')">
         <div class="header">
 
@@ -66,6 +72,7 @@
                             <span>Abstraction</span>
                         </div>
                     </div>
+                    
                 </div>
            </div>
         </div>
@@ -115,7 +122,7 @@
 						<p class="present-slider-item-heading">Minas Avetisyan (1904-1948)</p>
 						<p class="present-slider-item-text">
                             A theater artist and painter with more than 1,000 works to his credit,
-                            including paintings, murals and other projects, Minas did for theater performances.
+                      including paintings, murals and other projects, Minas did for theater performances.
                         </p>
 					
                     </div>
@@ -133,80 +140,8 @@
    
 </section>
 
-    <section class="works">
-        <div class="main">
-            <div class="main-pers">
-
-                <div class="main-pers-cont">
-                    
-                        <div class="main-pers-cont-img">
-                            <img src="./img/autor.jpg">
-                        </div>
-
-                        <div class="main-pers-cont-inf">
-                            <p>
-                                <span>Hovhannes Aivazovsky</span>
-                                <span>Sea painter</span>
-                            </p>
-                        </div>
-                </div>
-
-            </div>
-        
-            <div class="main-works">
-           
-                <h2>My Works</h2>
-
-                <div class="main-works-row">
-                    <div><a href="./img/1.jfif"><img class="preview" src="./img/1.jfif" alt="window"></a></div>
-                    <div><a href="./img/2.jpg"><img class="preview" src="./img/2.jpg" alt="window"></a></div>
-                    <div><a href="./img/3.jpg"><img class="preview" src="./img/3.jpg" alt="window"></a></div>
-                    <div><a href="./img/1.jfif"><img class="preview" src="./img/1.jfif" alt="window"></a></div>
-                    <div><a href="./img/2.jpg"><img class="preview" src="./img/2.jpg" alt="window"></a></div>
-                    <div><a href="./img/3.jpg"><img class="preview" src="./img/3.jpg" alt="window"></a></div>
-                    <div><a href="./img/1.jfif"><img class="preview" src="./img/1.jfif" alt="window"></a></div>
-                    <div><a href="./img/2.jpg"><img class="preview" src="./img/2.jpg" alt="window"></a></div>
-                </div>
-            </div>
-
-        </div>
-        <div class="main">
-            <div class="main-pers">
-
-                <div class="main-pers-cont">
-                    
-                        <div class="main-pers-cont-img">
-                            <img src="./img/autor.jpg">
-                        </div>
-
-                        <div class="main-pers-cont-inf">
-                            <p>
-                                <span>Հովհաննես Այվազովսկի</span>
-                                <span>Ծովանկարիչ</span>
-                                <span>Գեղանկարիչ</span>
-                            </p>
-                        </div>
-                </div>
-
-            </div>
-        
-            <div class="main-works">
-           
-                <h2>My Works</h2>
-
-                <div class="main-works-row">
-                    <div><a href="./img/1.jfif"><img class="preview" src="./img/1.jfif" alt="window"></a></div>
-                    <div><a href="./img/2.jpg"><img class="preview" src="./img/2.jpg" alt="window"></a></div>
-                    <div><a href="./img/3.jpg"><img class="preview" src="./img/3.jpg" alt="window"></a></div>
-                    <div><a href="./img/1.jfif"><img class="preview" src="./img/1.jfif" alt="window"></a></div>
-                    <div><a href="./img/2.jpg"><img class="preview" src="./img/2.jpg" alt="window"></a></div>
-                    <div><a href="./img/3.jpg"><img class="preview" src="./img/3.jpg" alt="window"></a></div>
-                    <div><a href="./img/1.jfif"><img class="preview" src="./img/1.jfif" alt="window"></a></div>
-                    <div><a href="./img/2.jpg"><img class="preview" src="./img/2.jpg" alt="window"></a></div>
-                </div>
-            </div>
-
-        </div>
+    <section class="works"  id="app" id="filter-list"  >
+   
     </section>
 
   <footer>

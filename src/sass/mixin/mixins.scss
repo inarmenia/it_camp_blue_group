@@ -1,12 +1,40 @@
 
 
-@mixin fnt($color, $fml, $weight, $size, $height) {
+@mixin fnt($color, $weight, $size) {
     color:$color;
-    font-family: $fml;
     font-style: normal;
+    letter-spacing: 1px;
     font-weight: $weight;
-    font-size: $size;
-    line-height: $height;   
+    font-size: $size;  
 }
 
-// @include fnt($txt-clr, $fml:'Arial',$weight:400,$size:18px,$height:23px);
+@mixin margin($left, $top) {
+    margin-left:$left;
+    margin-top:$top;
+}
+
+
+  @mixin for-size($size) {
+    @if $size == for-responsive {
+      @media (min-width:992px) { @content; }
+    } @else if $size == for-phone {
+      @media (max-width:500px) { @content; }
+    } @else if $size == for-responsive-max {
+      @media (max-width:992px) { @content; }
+    }    
+  }
+//   @include for-size(for-responsive) {    
+//     font-size: 1rem; 
+//  }
+
+
+
+// @mixin hover($color) {
+//     &:hover {
+//         cursor: pointer;
+//     }
+// }
+// @include fnt($color:black,$weight:600,$size:17px);
+
+
+// @include  margin($left:, $top:);

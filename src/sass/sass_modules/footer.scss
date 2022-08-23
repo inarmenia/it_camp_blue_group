@@ -6,14 +6,9 @@
     padding-bottom: 20px;
     border-top: 16px solid #4b4a4a;
     @extend .flx; 
-    justify-content: center;
-    align-items: center;
-    font-size: 17px;
-    color: #4b4a4a;
-  
+    @extend .f-cent;
+    @include fnt($color:#4b4a4a,$weight:400,$size:17px);
   }
-  
   .footer-name a {
     color: white;
-    text-decoration: none;
   }

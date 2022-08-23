@@ -5,7 +5,7 @@ function nav() {
 
   menu.addEventListener('click', function(){
     nav.classList.toggle('mobile');
-    this.toggle("is-active");
+    // this.toggle("is-active");
   });
 
     

@@ -4,18 +4,24 @@
   width:65px;
   height: auto;
   float: left;
-  margin-left:30px;
-  margin-top: 10px;
+  @include  margin($left:30px, $top:10px);
   overflow: hidden;
   padding: 4px;
+  span {
+    display: block;
+    height: 4px;
+    margin: 6px;
+    width: 95%;
+    background-color: rgb(7, 4, 4);
+    border-radius: 20%;
+    box-shadow: 0 1px 1px #FFFFFF;
+  }
 }
 
 .txtMyu {
-  font-size:22px;
-  color: #FFFFFF;
-  margin-left: 120px;
+  @include fnt($color:#FFFFFF,$weight:600,$size:22px);
+  @include  margin($left:120px, $top:10px);
   overflow: hidden;
-  margin-top: 10px;
   font-family: 'Marck Script', cursive;
   text-shadow: 0px 0px 0 rgb(-70,-71,0),
   0px 1px  0 rgb(-309,-310,0),
@@ -25,27 +31,35 @@
  
 }
 
-.menu-toggle span {
-  display: block;
-  height: 4px;
-  margin: 6px;
-  width: 95%;
-  background-color: rgb(7, 4, 4);
-  border-radius: 20%;
-  box-shadow: 0 1px 1px #FFFFFF;
-}
-
 .nav {
-  width:220px;
+  width:250px;
   height: 100%;
   overflow: hidden;
   transition: all 1s linear;
   position: absolute;
   top: 36px;
-  left: -240px;
+  left: -270px;
   bottom: 0;
   z-index: 999;
   background-color: rgba(0, 0, 0, 1);
+  &-search{
+    box-shadow: 0 0 5px #508878,3px 3px 5px 0 #ccc;
+    margin-left:-10px;
+    border-radius:3px;
+    padding: 2px 2px;
+    
+    input{
+        height: 30px;
+        padding: 5px;
+        width: 80%;
+        border: none;
+        position: relative;
+        &:focus{
+            outline: 0;
+            outline-offset: 0;
+        }
+    }
+}
  
 }
 
@@ -63,24 +77,21 @@
 
 .nav ul {
   margin-top: 30px;
+  li {
+    margin-left: 30%;
+    a {
+      width: 153px;
+      margin: 5px;
+      @include fnt($color:#FFFFFF,$weight:600,$size:20px);
+      list-style: none;
+      display: flex;
+      letter-spacing: 1px;
+      text-shadow: 1px 1px 1px hsla(0, 0%, 255%, 0.6);
+    }
+  }
 }
 
-.nav ul li {
-  margin-left: 30%;
-}
 
-.nav ul li a {
-  width: 153px;
-  text-decoration: none;
-  margin: 5px;
-  color: white;
-  font-size: 20px;
-  list-style: none;
-  text-decoration: none;
-  display: flex;
-  letter-spacing: 1px;
-  text-shadow: 1px 1px 1px hsla(0, 0%, 255%, 0.6);
-}
 nav {
   width:250px;
   height: 50px;
