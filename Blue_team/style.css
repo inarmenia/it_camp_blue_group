@@ -1,0 +1,108 @@
+@import url("/CSS/practice/practice_3/reset.css");
+
+*{
+box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body input button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.easy_support_container{
+    width: 350px;
+    height: 430px;
+    position: fixed;
+    bottom: -380px;
+    right: 20px;
+    overflow: hidden;
+    box-shadow: 3px 8px 12px rgb(101, 114, 113);
+    cursor: pointer;
+    transition: 1s;
+}
+
+.easy_support_header{
+    height: 50px;
+    background-color: rgb(106, 169, 178);
+    text-align: center;
+    line-height: 50px;
+    border-radius: 10px 10px 0 0;
+    font-weight: bold;
+    font-size: 22px;
+    transition: .5s;
+}
+
+.easy_support__body{
+    height: 380px;
+    padding: 30px 20px;
+}
+
+label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.easy_support__body label:nth-child(3){ 
+    margin-bottom: 30px;
+}
+
+label input{
+    width: 100%;
+    padding: 8px 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    border: 2px solid gray;
+    outline: none;
+    border-radius: 5px;
+}
+
+label input:focus{
+    /* border-color: rgb(36, 198, 204); */
+    rgb(186, 193, 211)
+}
+
+label div:first-child{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+ 
+.easy_support__body button{
+    width: 100%;
+    padding: 8px;
+    background-color: rgb(106, 178, 140)
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .8s;
+}
+
+.easy_support__body button:hover{
+    background-color: rgb(186, 193, 211);
+}
+
+p{
+    font-size: 11px;
+    margin-top: 15px;
+    text-align: center;
+    color: rgb(16, 17, 123);
+    font-style: italic;
+}
+
+/* ..........test........... */
+input[type="checkbox"]:checked + .easy_support_container{
+    bottom: 0;
+}
+
+.checkbox{
+    display: none;
+}
+.easy_support_header:hover{
+    background-color: rgb(186, 193, 211);
+}
+
